@@ -30,7 +30,10 @@
       <w>fileutils</w>
       <w>findex</w>
       <w>formatters</w>
+      <w>fradminpassword</w>
+      <w>frlicense</w>
       <w>fsync</w>
+      <w>fusionreactor</w>
       <w>getwd</w>
       <w>heroku</w>
       <w>httpok</w>
@@ -47,6 +50,7 @@
       <w>libcklog</w>
       <w>libcrpytoki</w>
       <w>libcryptoki</w>
+      <w>libfrjvmti</w>
       <w>libruxitagentloader</w>
       <w>libyjpagent</w>
       <w>ljust</w>

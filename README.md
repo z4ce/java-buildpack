@@ -79,6 +79,7 @@ To learn how to configure various properties of the buildpack, follow the "Confi
 	* [Dyadic EKM Security Provider](docs/framework-dyadic_ekm_security_provider.md) ([Configuration](docs/framework-dyadic_ekm_security_provider.md#configuration))
 	* [Dynatrace Appmon Agent](docs/framework-dynatrace_appmon_agent.md) ([Configuration](docs/framework-dynatrace_appmon_agent.md#configuration))
 	* [Dynatrace SaaS/Managed OneAgent](docs/framework-dynatrace_one_agent.md) ([Configuration](docs/framework-dynatrace_one_agent.md#configuration))
+	* [Fusion Reactor Agent](docs/framework-fusion_reactor_agent.md) ([Configuration](docs/framework-fusion_reactor_agent.md#configuration))
 	* [Google Stackdriver Debugger](docs/framework-google_stackdriver_debugger.md) ([Configuration](docs/framework-google_stackdriver_debugger.md#configuration))
 	* [Introscope Agent](docs/framework-introscope_agent.md) ([Configuration](docs/framework-introscope_agent.md#configuration))
 	* [Java Options](docs/framework-java_opts.md) ([Configuration](docs/framework-java_opts.md#configuration))

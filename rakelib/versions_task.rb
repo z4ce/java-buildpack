@@ -55,6 +55,7 @@ module Package
       'dyadic_ekm_security_provider'        => 'Dyadic EKM Security Provider',
       'dynatrace_appmon_agent'              => 'Dynatrace Appmon Agent',
       'dynatrace_one_agent'                 => 'Dynatrace OneAgent',
+      'fusion_reactor_agent'                => 'Fusion Reactor Agent',
       'google_stackdriver_debugger'         => 'Google Stackdriver Debugger',
       'groovy'                              => 'Groovy',
       'jre'                                 => 'OpenJDK JRE',
