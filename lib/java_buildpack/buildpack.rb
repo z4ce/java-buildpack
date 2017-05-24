@@ -43,8 +43,8 @@ module JavaBuildpack
     #                         (+[]+).
     def detect
       tags = tag_detection('container', @containers, true)
-      tags.concat tag_detection('framework', @frameworks, false) unless tags.empty?
       tags.concat tag_detection('JRE', @jres, true) unless tags.empty?
+      tags.concat tag_detection('framework', @frameworks, false) unless tags.empty?
       tags << "java-buildpack=#{@buildpack_version.to_s false}" unless tags.empty?
       tags = tags.flatten.compact.sort
 
@@ -61,8 +61,10 @@ module JavaBuildpack
       container = component_detection('container', @containers, true).first
       no_container unless container
 
+      jre = component_detection('JRE', @jres, true).first
+
       component_detection('framework', @frameworks, false).each(&:compile)
-      component_detection('JRE', @jres, true).first.compile
+      jre.compile
       container.compile
     end
 
@@ -74,10 +76,12 @@ module JavaBuildpack
       container = component_detection('container', @containers, true).first
       no_container unless container
 
+      jre    = component_detection('JRE', @jres, true).first
+
       component_detection('framework', @frameworks, false).map(&:release)
 
       commands = []
-      commands << component_detection('JRE', @jres, true).first.release
+      commands << jre.release
       commands << container.release
 
       command = commands.flatten.compact.join(' && ')
