@@ -15,4 +15,7 @@
 
 # Repository configuration
 ---
-default_repository_root: https://java-buildpack.cloudfoundry.org
+default_repository_root: http://127.0.0.1:8081/repository/pcf-javabuidpack
+binary_proxies:
+- from: https://java-buildpack.cloudfoundry.org
+  to: http://127.0.0.1:8081/repository/pcf-javabuidpack
